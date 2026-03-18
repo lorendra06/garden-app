@@ -6,8 +6,6 @@ from the given month.
 TODO: Replace hardcoded month number with dynamic input from the user
 """
 
-month = 3
-
 
 def get_season(month):
     """
@@ -50,6 +48,7 @@ def get_advice(season):
     return advice
 
 
+month = int(input("Enter the current month (1-12): "))
 season = get_season(month)
 advice = get_advice(season)
 
